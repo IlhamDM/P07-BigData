@@ -11,7 +11,7 @@ import com.mongodb.client.MongoDatabase;
 
 /**
  *
- * @author Choco Calon Presiden RI
+ * @author Ilham DM
  */
 public class Koneksi {
     public static MongoDatabase sambungDB(){
@@ -21,7 +21,7 @@ public class Koneksi {
             System.out.println("Koneksi Sukses!");
             return database;
         }catch (Exception e){
-            System.out.println("Koneksi Gagak: "+e.getMessage());
+            System.out.println("Koneksi Gagal: "+e.getMessage());
         }
         
         return null;
